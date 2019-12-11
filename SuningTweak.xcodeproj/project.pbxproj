@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BB7D7F0239F72CB00DE169E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7D7EF239F72CB00DE169E /* UIKit.framework */; };
+		4BB7D7F2239F72CB00DE169E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7D7F1239F72CB00DE169E /* Foundation.framework */; };
+		4BB7D7F4239F72CB00DE169E /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7D7F3239F72CB00DE169E /* CydiaSubstrate.framework */; };
+		4BB7D7FD239F72CB00DE169E /* SuningTweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7D7FC239F72CB00DE169E /* SuningTweak.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4BB7D7EC239F72CB00DE169E /* SuningTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SuningTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB7D7EF239F72CB00DE169E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4BB7D7F1239F72CB00DE169E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BB7D7F3239F72CB00DE169E /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		4BB7D7F8239F72CB00DE169E /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		4BB7D7FA239F72CB00DE169E /* SuningTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SuningTweak-Prefix.pch"; path = "../SuningTweak-Prefix.pch"; sourceTree = "<group>"; };
+		4BB7D7FB239F72CB00DE169E /* SuningTweak.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = SuningTweak.xm; sourceTree = "<group>"; };
+		4BB7D7FC239F72CB00DE169E /* SuningTweak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SuningTweak.mm; sourceTree = "<group>"; };
+		4BB7D801239F72CB00DE169E /* SuningTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SuningTweak.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BB7D7E8239F72CB00DE169E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB7D7F0239F72CB00DE169E /* UIKit.framework in Frameworks */,
+				4BB7D7F2239F72CB00DE169E /* Foundation.framework in Frameworks */,
+				4BB7D7F4239F72CB00DE169E /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BB7D7E1239F72CB00DE169E = {
+			isa = PBXGroup;
+			children = (
+				4BB7D7F5239F72CB00DE169E /* SuningTweak */,
+				4BB7D7EE239F72CB00DE169E /* Frameworks */,
+				4BB7D7ED239F72CB00DE169E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BB7D7ED239F72CB00DE169E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D7EC239F72CB00DE169E /* SuningTweak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BB7D7EE239F72CB00DE169E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D7EF239F72CB00DE169E /* UIKit.framework */,
+				4BB7D7F1239F72CB00DE169E /* Foundation.framework */,
+				4BB7D7F3239F72CB00DE169E /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BB7D7F5239F72CB00DE169E /* SuningTweak */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D7FB239F72CB00DE169E /* SuningTweak.xm */,
+				4BB7D7FC239F72CB00DE169E /* SuningTweak.mm */,
+				4BB7D7F6239F72CB00DE169E /* Package */,
+				4BB7D7F9239F72CB00DE169E /* Supporting Files */,
+			);
+			path = SuningTweak;
+			sourceTree = "<group>";
+		};
+		4BB7D7F6239F72CB00DE169E /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D7F7239F72CB00DE169E /* DEBIAN */,
+				4BB7D7FE239F72CB00DE169E /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		4BB7D7F7239F72CB00DE169E /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D7F8239F72CB00DE169E /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		4BB7D7F9239F72CB00DE169E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D7FA239F72CB00DE169E /* SuningTweak-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BB7D7FE239F72CB00DE169E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D7FF239F72CB00DE169E /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4BB7D7FF239F72CB00DE169E /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D800239F72CB00DE169E /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		4BB7D800239F72CB00DE169E /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				4BB7D801239F72CB00DE169E /* SuningTweak.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BB7D7E9239F72CB00DE169E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4BB7D7EB239F72CB00DE169E /* SuningTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BB7D804239F72CB00DE169E /* Build configuration list for PBXNativeTarget "SuningTweak" */;
+			buildPhases = (
+				4BB7D7E6239F72CB00DE169E /* ShellScript */,
+				4BB7D7E7239F72CB00DE169E /* Sources */,
+				4BB7D7E8239F72CB00DE169E /* Frameworks */,
+				4BB7D7E9239F72CB00DE169E /* Headers */,
+				4BB7D7EA239F72CB00DE169E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuningTweak;
+			productName = SuningTweak;
+			productReference = 4BB7D7EC239F72CB00DE169E /* SuningTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BB7D7E2239F72CB00DE169E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					4BB7D7EB239F72CB00DE169E = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 4BB7D7E5239F72CB00DE169E /* Build configuration list for PBXProject "SuningTweak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BB7D7E1239F72CB00DE169E;
+			productRefGroup = 4BB7D7ED239F72CB00DE169E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BB7D7EB239F72CB00DE169E /* SuningTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BB7D7E6239F72CB00DE169E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		4BB7D7EA239F72CB00DE169E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BB7D7E7239F72CB00DE169E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB7D7FD239F72CB00DE169E /* SuningTweak.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4BB7D802239F72CB00DE169E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"SuningTweak\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BB7D803239F72CB00DE169E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"SuningTweak\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		4BB7D805239F72CB00DE169E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52LD7Q484F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuningTweak/SuningTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 192.168.43.54;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 22;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BB7D806239F72CB00DE169E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52LD7Q484F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuningTweak/SuningTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 192.168.43.54;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 22;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BB7D7E5239F72CB00DE169E /* Build configuration list for PBXProject "SuningTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB7D802239F72CB00DE169E /* Release */,
+				4BB7D803239F72CB00DE169E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BB7D804239F72CB00DE169E /* Build configuration list for PBXNativeTarget "SuningTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB7D805239F72CB00DE169E /* Release */,
+				4BB7D806239F72CB00DE169E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BB7D7E2239F72CB00DE169E /* Project object */;
+}
